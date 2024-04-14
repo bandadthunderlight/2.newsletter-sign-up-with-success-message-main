@@ -32,6 +32,9 @@
   .form-row {
     flex-direction: row-reverse;
   }
+  .form-poster {
+    content: url(/assets/images/illustration-sign-up-mobile.svg);
+  }
   .form-datas-wrapper {
     display: flex;
     flex-direction: column;
