@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="./bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+
+<body class="main-body">
+
+  <section class="form-section m-auto mt-xs-0 mt-md-5 d-block ">
+    <div class="form-container container">
+      <div class="row form-row">
+
+
+        <div class="form-poster-wrapper col-12 col-md-6 m-0 p-0">
+          <img src="./assets/images/illustration-sign-up-mobile.svg"
+            class="form-poster w-100 p-xs-0 p-md-4 img-fluid d-block">
+          <!-- <img src="./assets/images/illustration-sign-up-mobile.svg" class="form-poster2 w-100 img-fluid d-none my-0"> -->
+        </div>
+
+        <div class="form-datas-wrapper col-12 col-md-6 px-4 my-3">
+
+          <div class="form-datas-title my-3 p-0">
+            Stay updated!
+          </div>
+
+          <div class="form-datas-subtitle my-1 p-0">
+            Join 60,000+ product managers recieving monthly updates on:
+          </div>
+
+          <div class="form-datas-items my-3">
+            <div class="form-datas-item">
+              <img src="./assets/images/icon-list.svg" class="form-data-icon">
+              <p class="form-data-text">Product discovery and building what matters</p>
+            </div>
+            <div class="form-datas-item">
+              <img src="./assets/images/icon-list.svg" class="form-data-icon">
+              <p class="form-data-text">Measuring to ensure updates are a success</p>
+            </div>
+            <div class="form-datas-item">
+              <img src="./assets/images/icon-list.svg" class="form-data-icon">
+              <p class="form-data-text">And much more!</p>
+            </div>
+          </div>
+          <form class="form-datas-emailInput" id="myForm" action="#" method="post" onsubmit="sendFormToServer(event)">
+            <div class="col-auto">
+              <label for="emailInput" class="col form-label">Email address</label>
+              <span id="passwordHelpInline" class="form-text d-none">
+                valid email required
+              </span>
+            </div>
+            <div class="col-auto">
+              <input type="text" id="emailInput" class="form-control mb-4 p-3" aria-describedby="passwordHelpInline"
+                placeholder="email@company.com">
+            </div>
+
+
+            <!-- <label for="emailInput" class="form-label mt-3">Email address</label>
+            <input oninvalid="this.setCustomValidity('Valid email required')" type="email" id="emailInput"
+              validate="required:true" class="form-control mb-4 p-3" aria-describedby="passwordHelpBlock"
+              placeholder="email@company.com" required> -->
+            <input type="submit" value="Subscribe to monthly newsletter" class="form-datas-button py-3 mb-3 w-100" id="form-datas-button">
+          </form>
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+
+  <section class="message-section d-none rounded-5 ">
+    <div class="container message-container">
+      <img src="./assets/images/icon-success.svg" class="message-icon" />
+      <h1 class="message-title my-3">Thanks for subscribing!</h1>
+      <p class="message-text my-3">A confirmation email has been sent to<br /><span class="message-text-span">sample
+          email address</span>.Please open it and click the button
+        inside to confirm your subscription.</p>
+
+    </div>
+    <div>
+      <button class="form-datas-button py-3" id="message-button">Dismiss message</button>
+    </div>
+  </section>
+
+  <!-- Success message end -->
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Toomaj Bandad</a>.
+  </div> -->
+
+  <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
